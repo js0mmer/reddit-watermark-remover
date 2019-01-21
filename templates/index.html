@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reddit Watermark Remover</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css" >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" type="text/css" />
+    <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main col-md-12">
+        <h1>Reddit Watermark Remover</h1>
+        <img src="{{ url_for('static', filename='favicon.png') }}" />
+        <h3>Simply upload a file and click submit to remove reddit watermarks!</h3>
+        <form method="post" action="/post" enctype="multipart/form-data">
+          <input type="file" name="file" />
+          <input type="submit" value="Submit" class="btn btn-dark" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
