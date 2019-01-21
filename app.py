@@ -6,6 +6,8 @@ import os.path
 import PIL
 import PIL.Image
 import random
+from io import BytesIO
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -16,9 +18,10 @@ def index():
 def process_file():
     if request.method == 'POST':
         f = request.files['file']
-        filename = 'cache/' + str(len([name for name in os.listdir('./cache') if os.path.isfile(name)])) + '.png'
-        add_watermark(PIL.Image.open(f)).save(filename)
-        return send_file(filename, mimetype='image/png')
+        img_io = BytesIO()
+        add_watermark(PIL.Image.open(f)).save(img_io, 'PNG')
+        img_io.seek(0)
+        return send_file(img_io, mimetype='image/png')
 
 def add_watermark(original_image):
     width, height = original_image.size
