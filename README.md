@@ -4,7 +4,7 @@
 
 ## Backstory
 
-I was browsing Reddit and saw [this post](https://www.reddit.com/r/dankmemes/comments/aicdjm/hahaha/eenig21/?context=3). [The top comment](https://www.reddit.com/r/dankmemes/comments/aicdjm/hahaha/eemvorj) stated that "someone should make a 'watermark remover' site that just adds more watermarks to the images." I decided I was up for the challenge.
+I was browsing Reddit and saw [this post](https://www.reddit.com/r/dankmemes/comments/aicdjm/hahaha/). [The top comment](https://www.reddit.com/r/dankmemes/comments/aicdjm/hahaha/eemvorj) stated that "someone should make a 'watermark remover' site that just adds more watermarks to the images." I decided I was up for the challenge.
 
 ## How I made it
 
