@@ -10,9 +10,9 @@ from io import BytesIO
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def index():
-  return render_template('index.html')
+    return render_template('index.html')
 
 @app.route('/post', methods=['POST'])
 def process_file():
@@ -35,12 +35,9 @@ def add_watermark(original_image):
     watermark2 = watermark2.resize((w_size2, w_size2))
 
     for i in range(0, 8):
-      original_image.paste(watermark, (random.randint(0, width - w_size), random.randint(0, height - w_size)), watermark)
+        original_image.paste(watermark, (random.randint(0, width - w_size), random.randint(0, height - w_size)), watermark)
 
     for i in range(0, 8):
-      original_image.paste(watermark2, (random.randint(0, width - w_size), random.randint(0, height - w_size)), watermark2)
+        original_image.paste(watermark2, (random.randint(0, width - w_size), random.randint(0, height - w_size)), watermark2)
     
     return original_image
-
-# filename = input('Filename: ')
-# add_watermark(PIL.Image.open(os.path.join(os.getcwd(), filename + '.png'))).save(filename + '1.png')
