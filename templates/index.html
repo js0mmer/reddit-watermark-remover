@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" type="text/css" />
     <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png" />
     <script defer src="{{ url_for('static', filename='js/all.min.js') }}"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133013455-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-133013455-1');
+    </script>
   </head>
   <body>
     <div class="banner jumbotron">
