@@ -46,3 +46,47 @@ img {
 .jumbotron {
   border-radius: 0%;
 }
+
+/* ====== */
+/* FOOTER */
+/* ====== */
+
+footer {
+  background-color: #3af;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+footer p {
+  font-weight: bold;
+  padding-top: 7px;
+}
+
+footer .col-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .text {
+    justify-content: flex-start;
+  }
+  
+  footer .icons {
+    justify-content: flex-end;
+  }
+}
+
+.fa-heart, .fa-circle {
+  color: white;
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-reddit {
+  color: red;
+}

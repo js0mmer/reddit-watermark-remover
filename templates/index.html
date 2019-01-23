@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css" >
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" type="text/css" />
     <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png" />
+    <script defer src="{{ url_for('static', filename='js/all.min.js') }}"></script>
   </head>
   <body>
     <div class="banner jumbotron">
@@ -32,5 +33,23 @@
         </div>
       </div>
     </div>
+    <footer>
+      <div class="container">
+        <div class="col-sm icons">
+          <a href="https://www.reddit.com/r/dankmemes/comments/aicdjm/hahaha/eenig21/?context=3" target="_blank">
+            <span class="fa-stack fa-lg">
+              <span class="fa fa-circle fa-stack-2x"></span>
+              <span class="fab fa-reddit fa-stack-1x"></span>
+            </span>
+          </a>
+          <a href="https://github.com/js0mmer/reddit-watermark-remover" target="_blank">
+            <span class="fa-stack fa-lg">
+              <span class="fa fa-circle fa-stack-2x"></span>
+              <span class="fab fa-github fa-stack-1x"></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
