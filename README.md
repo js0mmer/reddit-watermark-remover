@@ -1,6 +1,6 @@
 # Reddit Watermark Remover
 
-![](https://i.imgur.com/2IYMu7k.png)
+![](https://i.imgur.com/x9NnuF3.png)
 
 ## Backstory
 
